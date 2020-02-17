@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="styles.css">
     </head>
 
-    <body onLoad="init();">
+    <body>
 
         <canvas id='canvas' width="600" height="400">
             Your browser doesn't support Canvas element
@@ -15,7 +15,7 @@
 
         <article>
             Scale Percentage: 
-            <input id='slide' type="range" min="0" max="100" value="100" onChange="changeScale(this.value)" step="10" />
+            <input id='slider' type="range" min="0" max="100" value="100" step="10" />
         </article>
 
         <article>
@@ -26,6 +26,6 @@
             HTML5 Logo by <a href="http://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a>
         </footer>
 
-        <script src="logo.js"></script>
+        <script type="module" src="main.js"></script>
     </body>
 </html>
